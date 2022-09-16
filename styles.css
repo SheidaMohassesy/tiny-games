@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(236, 236, 236);
+}
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(192, 192, 192);
+    cursor: default;
+    margin: 10px;
+    color: rgb(48, 48, 48);
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.game:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(155, 155, 155);
+}
