@@ -5,29 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <script>
-
-        function createRow(n) {
-            const row = document.createElement("div");
-            for(let i=0;i<n;i++) {
-                const btn = document.createElement('button');
-                btn.innerText = '[ ]';
-                row.appendChild(btn);
-            }
-            return row;
-        }
-        function createBoard(parentElement, n) {
-            for(let i=0;i<n;i++) {
-                const row = createRow(n);
-                parentElement.appendChild(row);
-            }
-        }
-        window.addEventListener('load', (event) => {
-            const boardElement = document.getElementById('board');
-            const size = prompt('Enter Board Size: (e.g: 3, 4, 5)', '3')
-            createBoard(boardElement, size);
-        });
-    </script>
+    <script src="./game.js"></script>
 </head>
 <body>
     <div>This is TicTacToe Game <a href="../index.html">...UP</a></div>
