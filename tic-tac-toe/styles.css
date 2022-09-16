@@ -1,0 +1,57 @@
+#board-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.row {
+    flex: 1;
+
+}
+.slot {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(132, 240, 240);
+    border: none;
+    cursor: default;
+    transition: all linear 300ms;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.slot:hover {
+    background-color: rgb(38, 173, 173);
+    cursor: pointer;
+}
+
+.slot:disabled {
+    color: black;
+}
+
+#reset-button {
+    max-width: 200px;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    color:white;
+    cursor: default;
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    transition: all linear 200ms;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+#reset-button:hover {
+    background-color: rgb(136, 26, 26);
+    cursor: pointer;
+}

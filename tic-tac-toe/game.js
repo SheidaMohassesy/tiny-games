@@ -89,6 +89,7 @@ function buttonClickHandler(event)  {
             alert('X won the game');
         }
     }
+    event.target.disabled = true;
 }
 
 function initBoard(n) {
@@ -99,11 +100,12 @@ function initBoard(n) {
 }
 function createRow(n, rowIndex) {
     const row = document.createElement("div");
+    row.className= 'row';
     for(let i=0;i<n;i++) {
         const btn = document.createElement('button');
         btn.innerText = '[   ]';
-        btn.onclick = buttonClickHandler;
-
+        btn.onclick = buttonClickHandler;  
+        btn.className = 'slot';
         btn.id = `${rowIndex}-${i}`;
         row.appendChild(btn);
     }
@@ -117,11 +119,10 @@ function createBoard(parentElement, n) {
 }
 function whenWindowIsLoaded (e) {
     const boardElement = document.getElementById('board');
+    boardElement.innerHTML = '';
     size = Number(prompt('Enter Board Size: (e.g: 3, 4, 5)', '3'));
     createBoard(boardElement, size);
     initBoard(size);
-
-   // console.log(matris);
 }
 
 window.addEventListener('load', whenWindowIsLoaded);
