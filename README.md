@@ -12,4 +12,5 @@ You can run the app on your local machine by opening `index.html`
 ## Contact ME ;)
 
 LinkedIn: https://www.linkedin.com/in/sheidamohassesy/
+
 GitHub: https://github.com/SheidaM
