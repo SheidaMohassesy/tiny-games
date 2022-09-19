@@ -3,22 +3,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 #board {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    max-width: 500px;
+    max-height: 500px;
+    width: 500px;
+    height: 500px;
 }
 .row {
     flex: 1;
-
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5px;
 }
 .slot {
-    width: 70px;
-    height: 70px;
-    background-color: rgb(132, 240, 240);
+    flex: 1;
+    width: 100%;
+    height: 100%;
     border: none;
     cursor: default;
     transition: all linear 300ms;
@@ -27,7 +34,7 @@
 }
 
 .slot:hover {
-    background-color: rgb(38, 173, 173);
+    /* background-color: rgb(38, 173, 173); */
     cursor: pointer;
 }
 
